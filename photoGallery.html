@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Photo Gallery</title>
+    <style>
+        /* -----------  header style   --------- */
+        #bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .s-1{
+            font-size: 70px;
+            color: rgba(255, 14, 14, 0.302);
+            font-weight: 600;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position:absolute;
+            z-index: 4
+
+        }
+        .s-2{
+            font-size: 78px;
+            font-weight: normal;
+            color: rgb(248, 28, 28);
+            z-index:8;
+            left:25;
+            top: 25;
+        }
+        .orange{
+            background-color: rgb(247, 30, 30);
+            width: 100%;
+            height:12px
+        }
+
+        /* -----------  Body style   --------- */
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width:100%;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width:1200px;
+            overflow-x: hidden;
+            background-color: black;
+            padding-top:40px;
+            padding-bottom: 40px;
+        }
+
+         /* -----------  vertical image style  --------- */
+        .vertical{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            max-width: 80%;
+            height: 480px;
+            padding:5px;
+            margin: 10px; 
+            padding-top:40px;
+            padding-bottom:40px;
+        }
+        .vertical figure{
+            width:100%;
+            height: 480px;
+            border: 5px solid rgb(255, 0, 0);
+           
+        }
+        .vertical figure img{
+            width:300px;
+            height: 437px;
+        }
+
+        /* -----------  Horizontal image style   --------- */
+        .horizontal{
+            width: 300px;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .horizontal figure{
+            border: 5px solid red;
+            width: 100%;
+            height: 220px;
+             
+        }
+        .horizontal figure img{
+           
+            width: 300px;
+            height: 180px;
+    
+        }
+        
+        .combo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 450px;
+            width: 320px;
+          
+        }
+        figcaption{
+            color:white;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- above bar and title-->
+    <header>
+        <div class="orange"></div>
+        <div id="bar">
+            <h1 class="s-1">Animal Photo Gallery</h1>
+            <h1 class="s-2">Animal Photo Gallery</h1>
+        </div>
+        <div class="orange"></div>
+    </header>
+     <!-- image container-->
+  <section id="container">
+    <div class="container">
+            <div class="vertical">
+                 <figure>
+                    <img  src="https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Fox">
+                    <figcaption>Fox</figcaption>
+                </figure>
+            </div>
+      <!-- horizontal combination of image-->
+        <div class="combo">
+            <div class="horizontal">
+                <figure>
+                    <img  src="https://images.pexels.com/photos/6468/animal-brown-horse.jpg?auto=compress&cs=tinysrgb&w=1600" alt="Horses"> 
+                    <figcaption>Horses</figcaption>
+                </figure>
+            </div>
+            <div class="horizontal">
+                <figure>
+                    <img src="https://images.pexels.com/photos/460775/pexels-photo-460775.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="squrriel"> 
+                    <figcaption>Squrriel</figcaption>
+                </figure>
+            </div>
+            
+        </div>
+        <!-- finish -->
+            <div class="vertical">
+                <figure>
+                    <img  src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="panda">
+                    <figcaption>Panda</figcaption>
+                </figure>
+            </div>
+       
+    <!-- horizontal combination of image--> 
+        <div class="combo">
+            <div class="horizontal">
+                <figure>
+                    <img  src="https://images.pexels.com/photos/1829979/pexels-photo-1829979.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Monkey">
+                    <figcaption>Monkey</figcaption>
+                </figure>
+            </div>
+            <div class="horizontal">
+                <figure>
+                    <img  src="https://images.pexels.com/photos/3329812/pexels-photo-3329812.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Deer">
+                    <figcaption>Deer</figcaption>
+                </figure>
+            </div>     
+        </div>
+        <!-- finish -->
+            <div class="vertical">
+                <figure>
+                   <img  src="https://images.pexels.com/photos/3565117/pexels-photo-3565117.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Elephant">
+                   <figcaption>Elephant</figcaption>
+                </figure>
+            </div>
+       
+            <div class="vertical">
+                <figure>
+                  <img  src="https://images.pexels.com/photos/4001296/pexels-photo-4001296.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Rabbit">
+                  <figcaption>Rabbit</figcaption>
+            </figure>
+   </div>    
+</div>
+ </section>
+ <!-- image container finish -->
+</body>
+</html>
